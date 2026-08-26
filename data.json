@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "lang": "en",
+    "title": "Curriculum Vitae"
+  },
+
+  "persona": {
+    "firstName": "Mario",
+    "lastName": "Rossi",
+    "initials": "MR",
+    "title": "PhD Candidate — Aerospace Engineering",
+    "bio": "I am a 28-year-old aerospace engineer completing my PhD at Politecnico di Torino. My research focuses on advanced space propulsion systems and autonomous GNC architectures for next-generation spacecraft. I combine a strong analytical background with hands-on experience in simulation, embedded systems, and experimental testing. I thrive in interdisciplinary teams and I am equally comfortable writing flight software prototypes and presenting results at international conferences. Driven by curiosity and rigour, I am looking for opportunities in both industry R&D and academic research."
+  },
+
+  "contacts": [
+    { "icon": "map-pin", "value": "Turin, Italy" },
+    { "icon": "phone",   "value": "+39 333 456 7890" },
+    { "icon": "mail",    "value": "mario.rossi@polito.it" },
+    { "icon": "globe",   "value": "linkedin.com/in/mariorossi", "url": "https://linkedin.com/in/mariorossi" }
+  ],
+
+  "technicalSkills": [
+    { "name": "MATLAB / Simulink", "level": 5 },
+    { "name": "Python",            "level": 4 },
+    { "name": "C / C++",           "level": 3 },
+    { "name": "LaTeX",             "level": 5 },
+    { "name": "Git",               "level": 4 },
+    { "name": "Linux",             "level": 3 },
+    { "name": "STM32 / Embedded",  "level": 3 },
+    { "name": "SolidWorks / CAD",  "level": 3 },
+    { "name": "ANSYS",             "level": 2 },
+    { "name": "ROS",               "level": 2 },
+    { "name": "Docker",            "level": 2 }
+  ],
+
+  "languages": [
+    { "name": "Italian",  "level": "Native" },
+    { "name": "English",  "level": "C1" },
+    { "name": "Spanish",  "level": "B1" }
+  ],
+
+  "interests": [
+    "Chess",
+    "Basketball",
+    "Fantasy Football",
+    "Hiking",
+    "Open source"
+  ],
+
+  "education": [
+    {
+      "degree": "PhD in Aerospace Engineering",
+      "institution": "Politecnico di Torino",
+      "period": "Nov 2022 — present",
+      "note": "Defence expected 2026."
+    },
+    {
+      "degree": "MSc in Aerospace Engineering",
+      "institution": "Università degli Studi della Campania Luigi Vanvitelli",
+      "period": "Sep 2019 — Jul 2022",
+      "note": "Thesis in Advanced Space Propulsion: \"A Methodology for the Preliminary Design of a High Efficiency Multistage Plasma Thruster\"."
+    },
+    {
+      "degree": "BSc in Mechanical and Aerospace Engineering",
+      "institution": "Università degli Studi della Campania Luigi Vanvitelli",
+      "period": "Sep 2015 — Mar 2019",
+      "note": "Thesis in Flight Mechanics and Controls: \"A Control Algorithm for Re-Entry Vehicle from Space\"."
+    }
+  ],
+
+  "experience": [
+    {
+      "role": "Visiting Researcher",
+      "organisation": "DLR — German Aerospace Center",
+      "period": "2024",
+      "location": "Braunschweig, DE",
+      "bullets": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."
+      ]
+    },
+    {
+      "role": "Student Intern",
+      "organisation": "CIRA — Italian Aerospace Research Centre",
+      "period": "Jan 2022 — Jun 2022",
+      "location": "Capua, IT",
+      "bullets": [
+        "Conducted MSc thesis research on advanced space propulsion systems.",
+        "Collaborated with senior engineers on plasma thruster preliminary design and simulation."
+      ]
+    },
+    {
+      "role": "Research Scholarship Holder",
+      "organisation": "Università degli Studi della Campania Luigi Vanvitelli",
+      "period": "Jun 2019 — Sep 2019",
+      "location": "Aversa, IT",
+      "bullets": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      ]
+    }
+  ],
+
+  "publications": [
+    {
+      "title": "Design Systems for Complex SaaS Platforms: A Case Study",
+      "venue": "Springer — Modeling and Optimization in Space Engineering",
+      "year": "2023",
+      "url": "https://doi.org/10.xxxx/esempio-1"
+    },
+    {
+      "title": "Onboarding UX Patterns: Measuring Conversion Impact",
+      "venue": "73rd International Astronautical Congress (IAC 2022), Paris",
+      "year": "2022",
+      "url": "https://doi.org/10.xxxx/esempio-2"
+    },
+    {
+      "title": "Toward Self-Driving Interplanetary CubeSats: the ERC-Funded Project EXTREMA",
+      "venue": "72nd International Astronautical Congress (IAC 2021), Dubai",
+      "year": "2021",
+      "url": "https://doi.org/10.xxxx/esempio-3"
+    }
+  ],
+
+  "certifications": [
+    { "title": "Deep Learning Specialization", "issuer": "Coursera / DeepLearning.AI", "year": "2023" },
+    { "title": "ESA Academy — Concurrent Engineering Challenge", "issuer": "ESA", "year": "2022" }
+  ],
+
+  "otherActivities": [
+    {
+      "title": "Sports Blogger & Writer",
+      "detail": "Authored articles on basketball analytics and sports culture for [nome piattaforma/blog]. Developed an audience through consistent long-form writing, blending data-driven analysis with editorial storytelling.",
+      "period": "20XX — 20XX"
+    }
+  ]
+}
