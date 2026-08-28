@@ -1,65 +1,80 @@
 # Curriculum Vitae
 
-CV personale in HTML, CSS e vanilla JS — nessun framework, nessun build step.
+A personal CV built with HTML, CSS, and vanilla JavaScript. It uses no framework and requires no build step.
 
-## Come funziona
+## How it works
 
-Tutto il contenuto del CV è nel file **`data.json`**. L'HTML lo legge e genera le sezioni automaticamente. Per aggiornare il CV basta modificare il JSON.
+The CV content is stored in `data.json`. `index.html` fetches the JSON file and generates the sections dynamically, so most content updates only require editing `data.json`.
 
-```
-cv/
-├── index.html   ← template (non serve toccarlo per aggiornare i contenuti)
-├── style.css    ← stile grafico
-├── data.json    ← ✏️  i tuoi dati vanno qui
+`preview.html` is a standalone, static preview containing sample content. It does not load `data.json` and can be used as a visual reference or opened independently.
+
+```text
+portfolio/
+├── index.html    # Data-driven CV page
+├── preview.html  # Standalone sample preview
+├── style.css     # Shared visual styles for index.html
+├── data.json     # CV content
 └── README.md
 ```
 
-## Uso rapido
+## Quick start
 
-1. Clona il repo
-2. Apri `data.json` con un editor di testo
-3. Sostituisci i dati di esempio con i tuoi
-4. Apri `index.html` nel browser
+1. Clone or download the repository.
+2. Edit `data.json` with your own information.
+3. Start a local web server from the project folder:
 
-> **Nota:** serve un server locale per il fetch del JSON.
-> Il modo più semplice: `npx serve .` oppure l'estensione Live Server di VS Code.
+	```bash
+	npx serve .
+	```
 
-## Personalizzazione
+	Alternatively, install the Live Server extension in VS Code and choose **Open with Live Server** from the context menu for `index.html`.
+4. Open the local URL shown by the server.
 
-### Contenuti (`data.json`)
+> A local server is required for `index.html` because the page loads `data.json` with `fetch()`. Opening `index.html` directly as a `file://` URL may prevent the JSON from loading.
 
-Ogni sezione ha una chiave dedicata:
+## Customisation
 
-| Chiave           | Cosa contiene                          |
-|------------------|----------------------------------------|
-| `persona`        | Nome, cognome, ruolo, sommario         |
-| `contatti`       | Città, telefono, email, link           |
-| `competenze`     | Skill con livello e percentuale barra  |
-| `lingue`         | Lingua e livello                       |
-| `interessi`      | Lista di tag                           |
-| `esperienze`     | Ruolo, azienda, periodo, punti/desc    |
-| `formazione`     | Titolo, istituto, indirizzo, anno      |
-| `certificazioni` | Titolo, ente, anno                     |
+### Content (`data.json`)
 
-### Colori e font (`style.css`)
+The main sections use these keys:
 
-Le variabili CSS sono in `:root` — cambia lì per modificare palette e dimensioni della sidebar.
+| Key | Contents |
+| --- | --- |
+| `meta` | Page language and document title |
+| `persona` | Name, initials, role, and biography |
+| `contacts` | Location, phone number, email, and links |
+| `technicalSkills` | Skills and proficiency levels from 1 to 5 |
+| `languages` | Languages and proficiency labels |
+| `interests` | List of interest tags |
+| `education` | Degrees, institutions, periods, and notes |
+| `experience` | Roles, organisations, periods, locations, and descriptions or bullet points |
+| `publications` | Titles, venues, years, and optional links |
+| `certifications` | Certification titles, issuers, and years |
+| `otherActivities` | Additional activities, details, and periods |
 
-### Icone
+Keep the existing property names and data types when replacing the sample content. The `icon` field in `contacts` must match one of the keys defined in the `ICONS` object in `index.html`.
 
-Le icone SVG sono definite nell'oggetto `ICONS` dentro `index.html`. Per aggiungerne una nuova, copia un SVG e assegnagli una chiave, poi usa quella chiave nel campo `icona` del contatto in `data.json`.
+### Styling (`style.css`)
 
-## Pubblicazione su GitHub Pages
+The CSS custom properties are defined in `:root`. Edit them to change the colour palette, typography-related dimensions, or sidebar width.
 
-1. Push del repo su GitHub
-2. Vai in **Settings → Pages**
-3. Seleziona il branch `main` e la cartella `/` (root)
-4. Il CV sarà online su `https://tuousername.github.io/nome-repo/`
+`preview.html` contains its own copy of the styles and sample markup. If you change the design in `style.css`, update `preview.html` separately if you want both pages to remain visually identical.
 
-## Stampa / PDF
+## Previewing in VS Code
 
-Usa `Ctrl+P` (o `⌘+P`) nel browser. Gli stili di stampa sono già inclusi per un risultato pulito.
+With Live Server installed, right-click `index.html` and select **Open with Live Server**. The browser preview will refresh when you save changes. To view it inside VS Code, open the same local URL with **Simple Browser: Show** from the Command Palette.
 
-## Licenza
+## Publishing with GitHub Pages
 
-Progetto personale — usa e adatta liberamente.
+1. Push the repository to GitHub.
+2. Open **Settings → Pages**.
+3. Select the `main` branch and the `/ (root)` folder.
+4. GitHub Pages will provide a URL such as `https://your-username.github.io/repository-name/`.
+
+## Printing / PDF
+
+Use `Ctrl+P` (or `Cmd+P` on macOS) in the browser. Print styles are included for a clean result.
+
+## Licence
+
+Personal project. Feel free to use and adapt it.

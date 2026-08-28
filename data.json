@@ -1,50 +1,64 @@
 {
   "meta": {
     "lang": "en",
-    "title": "Curriculum Vitae"
+    "title": "Curriculum Vitae Nicola Puca"
   },
 
   "persona": {
-    "firstName": "Mario",
-    "lastName": "Rossi",
-    "initials": "MR",
+    "firstName": "Nicola",
+    "lastName": "Puca",
+    "initials": "NP",
+    "photo": "photo.jpg",
     "title": "PhD Candidate — Aerospace Engineering",
-    "bio": "I am a 28-year-old aerospace engineer completing my PhD at Politecnico di Torino. My research focuses on advanced space propulsion systems and autonomous GNC architectures for next-generation spacecraft. I combine a strong analytical background with hands-on experience in simulation, embedded systems, and experimental testing. I thrive in interdisciplinary teams and I am equally comfortable writing flight software prototypes and presenting results at international conferences. Driven by curiosity and rigour, I am looking for opportunities in both industry R&D and academic research."
+    "birthDate": "May 16, 1997",
+    "birthPlace": "Angri (SA), Italy",
+    "livingIn": "Turin, Italy",
+    "bio": [
+      "I am a 28-year-old aerospace engineer completing my PhD at Politecnico di Torino.",
+      "My research focuses on reduced-crew operations in civil aviation, combining knowledge engineering, NLP, and experimental flight simulation to develop intelligent pilot-assistance systems.",
+      "Driven by curiosity and rigour, I am looking for opportunities in both industry R&D and academic research."
+    ]
   },
 
   "contacts": [
-    { "icon": "map-pin", "value": "Turin, Italy" },
-    { "icon": "phone",   "value": "+39 333 456 7890" },
-    { "icon": "mail",    "value": "mario.rossi@polito.it" },
-    { "icon": "globe",   "value": "linkedin.com/in/mariorossi", "url": "https://linkedin.com/in/mariorossi" }
+    { "icon": "phone",   "value": "+39 334 728 1301" },
+    { "icon": "mail",    "value": "nicola.puca@polito.it" },
+    { "icon": "mail",    "value": "nicolapuca16@gmail.com", "url": "mailto:nicolapuca16@gmail.com" },
+    { "icon": "globe",   "value": "linkedin.com/in/nicolapuca", "url": "https://linkedin.com/in/nicolapuca" }
   ],
 
-  "technicalSkills": [
-    { "name": "MATLAB / Simulink", "level": 5 },
-    { "name": "Python",            "level": 4 },
-    { "name": "C / C++",           "level": 3 },
-    { "name": "LaTeX",             "level": 5 },
-    { "name": "Git",               "level": 4 },
-    { "name": "Linux",             "level": 3 },
-    { "name": "STM32 / Embedded",  "level": 3 },
-    { "name": "SolidWorks / CAD",  "level": 3 },
-    { "name": "ANSYS",             "level": 2 },
-    { "name": "ROS",               "level": 2 },
-    { "name": "Docker",            "level": 2 }
+  "softSkills": [
+    "Teamwork",
+    "Communication",
+    "Problem Solving",
+    "Adaptability",
+    "Critical Thinking",
+    "Leadership"
+  ],
+
+  "skillAreas": [
+    {
+      "area": "Programming & Data",
+      "items": "Python (NumPy, pandas, scikit-learn, Hugging Face Transformers), MATLAB/Simulink, Git, LaTeX, SQL basics."
+    },
+    {
+      "area": "AI & Knowledge Engineering",
+      "items": "NLP (BERT fine-tuning, text classification), speech recognition (Whisper), ontology design (OWL/RDF, Protégé), knowledge graphs (Neo4j, Cypher)."
+    },
+    {
+      "area": "Simulation & Experimental",
+      "items": "A320 FNPT II full-flight simulator, Tobii eye-tracking systems, multi-modal data acquisition and fusion, experimental test design."
+    },
+    {
+      "area": "General",
+      "items": "Linux, Docker, MS Office, technical writing, scientific presenting."
+    }
   ],
 
   "languages": [
     { "name": "Italian",  "level": "Native" },
-    { "name": "English",  "level": "C1" },
-    { "name": "Spanish",  "level": "B1" }
-  ],
-
-  "interests": [
-    "Chess",
-    "Basketball",
-    "Fantasy Football",
-    "Hiking",
-    "Open source"
+    { "name": "English",  "level": "B2" },
+    { "name": "Spanish",  "level": "A2" }
   ],
 
   "education": [
@@ -72,10 +86,10 @@
     {
       "role": "Visiting Researcher",
       "organisation": "DLR — German Aerospace Center",
-      "period": "2024",
+      "period": "May 2025 — Oct 2025",
       "location": "Braunschweig, DE",
       "bullets": [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+        "Cooperating with the DLR team on research projects.",
         "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."
       ]
     },
@@ -127,11 +141,12 @@
     { "title": "ESA Academy — Concurrent Engineering Challenge", "issuer": "ESA", "year": "2022" }
   ],
 
-  "otherActivities": [
-    {
-      "title": "Sports Blogger & Writer",
-      "detail": "Authored articles on basketball analytics and sports culture for [nome piattaforma/blog]. Developed an audience through consistent long-form writing, blending data-driven analysis with editorial storytelling.",
-      "period": "20XX — 20XX"
-    }
-  ]
+  "misc": [
+    "Driving licence: B (car)",
+    "Sports: Basketball, Chess, Fantasy Soccer",
+    "Passions: Cooking, Art & Museums, Aviation Safety",
+    "Sports Blogger & Writer (basketball analytics)"
+  ],
+
+  "gdpr": "I hereby authorise the use of my personal data in accordance with the GDPR 679/16 — \"European regulation on the protection of personal data\". This CV has been personally designed and coded in HTML and CSS."
 }
