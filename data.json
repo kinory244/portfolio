@@ -10,30 +10,30 @@
     "initials": "NP",
     "photo": "photo.jpg",
     "title": "PhD Candidate — Aerospace Engineering",
-    "birthDate": "May 16, 1997",
-    "birthPlace": "Angri (SA), Italy",
+    "birthDate": "July 18, 1996",
+    "birthPlace": "Naples, Italy",
     "livingIn": "Turin, Italy",
-    "bio": [
-      "I am a 28-year-old aerospace engineer completing my PhD at Politecnico di Torino.",
-      "My research focuses on reduced-crew operations in civil aviation, combining knowledge engineering, NLP, and experimental flight simulation to develop intelligent pilot-assistance systems.",
-      "Driven by curiosity and rigour, I am looking for opportunities in both industry R&D and academic research."
-    ]
+  "bio": [
+    "Aerospace engineer finishing a PhD at Politecnico di Torino, where my work sits at the intersection of human factors, knowledge engineering, and flight simulation.",
+    "I am drawn to complexity — the steeper the learning curve, the more engaged I become. Throughout my academic path I have shifted research focus more than once, each time diving deep into unfamiliar territory, and I see that adaptability as one of my strongest assets.",
+    "I tend to be analytical and patient, both at work and outside it. I value the effort behind results as much as the results themselves, and I bring that same care to every commitment I take on.",
+    "I am now looking for roles — in R&D or research — where curiosity is a job requirement and no two problems look the same."
+  ]
   },
 
   "contacts": [
     { "icon": "phone",   "value": "+39 334 728 1301" },
-    { "icon": "mail",    "value": "nicola.puca@polito.it" },
     { "icon": "mail",    "value": "nicolapuca16@gmail.com", "url": "mailto:nicolapuca16@gmail.com" },
     { "icon": "globe",   "value": "linkedin.com/in/nicolapuca", "url": "https://linkedin.com/in/nicolapuca" }
   ],
 
   "softSkills": [
-    "Teamwork",
-    "Communication",
-    "Problem Solving",
-    "Adaptability",
-    "Critical Thinking",
-    "Leadership"
+    { "name": "Research Design", "level": 95 },
+    { "name": "Adaptability", "level": 90 },
+    { "name": "Analytical Thinking", "level": 92 },
+    { "name": "Self-Directed Learning", "level": 88 },
+    { "name": "Active Listening", "level": 87 },
+    { "name": "Growth Mindset", "level": 93 }
   ],
 
   "skillAreas": [
@@ -65,20 +65,23 @@
     {
       "degree": "PhD in Aerospace Engineering",
       "institution": "Politecnico di Torino",
+      "funding": "PNRR — DM 352 | Industrial partner: Leonardo S.p.A.",
       "period": "Nov 2022 — present",
-      "note": "Defence expected 2026."
+      "note": "Development of knowledge-based support systems for pilot behavioural monitoring on the civilian flight deck, oriented to reduced-crew operations. Ontology-driven procedural modeling and multimodal pilot activity recognition validated through simulator-based flight testing."
     },
     {
       "degree": "MSc in Aerospace Engineering",
       "institution": "Università degli Studi della Campania Luigi Vanvitelli",
       "period": "Sep 2019 — Jul 2022",
-      "note": "Thesis in Advanced Space Propulsion: \"A Methodology for the Preliminary Design of a High Efficiency Multistage Plasma Thruster\"."
+      "grade": "110/110 cum laude",
+      "note": "MSc Thesis in Advanced Space Propulsion: <i>\"A Methodology for the Preliminary Design of a High Efficiency Multistage Plasma Thruster\"</i>."
     },
     {
       "degree": "BSc in Mechanical and Aerospace Engineering",
       "institution": "Università degli Studi della Campania Luigi Vanvitelli",
       "period": "Sep 2015 — Mar 2019",
-      "note": "Thesis in Flight Mechanics and Controls: \"A Control Algorithm for Re-Entry Vehicle from Space\"."
+      "grade": "110/110 cum laude",
+      "note": "BSc Thesis in Flight Mechanics and Controls: <i>\"A Control Algorithm for Re-Entry Vehicle from Space\"</i>."
     }
   ],
 
@@ -86,31 +89,29 @@
     {
       "role": "Visiting Researcher",
       "organisation": "DLR — German Aerospace Center",
-      "period": "May 2025 — Oct 2025",
+      "period": "May 2025 —<br>Oct 2025",
       "location": "Braunschweig, DE",
       "bullets": [
-        "Cooperating with the DLR team on research projects.",
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."
+        "Development of NLP-based methods for intelligent filtering and prioritisation of operational flight information (NOTAMs)."
       ]
     },
     {
       "role": "Student Intern",
       "organisation": "CIRA — Italian Aerospace Research Centre",
-      "period": "Jan 2022 — Jun 2022",
+      "period": "Jan 2022 —<br>Jun 2022",
       "location": "Capua, IT",
       "bullets": [
-        "Conducted MSc thesis research on advanced space propulsion systems.",
-        "Collaborated with senior engineers on plasma thruster preliminary design and simulation."
+        "Theoretical foundations of plasma phisics and of major electric propulsion technologies for space applications.",
+        "Developed a preliminary design procedure for a High-Efficiency Multistage Plasma Thruster (HEMPT) targeting low-thrust requirements."
       ]
     },
     {
       "role": "Research Scholarship Holder",
       "organisation": "Università degli Studi della Campania Luigi Vanvitelli",
-      "period": "Jun 2019 — Sep 2019",
+      "period": "Jun 2019 —<br>Sep 2019",
       "location": "Aversa, IT",
       "bullets": [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "Study of the dynamics of a hydraulic force-actuating system on a testing aircraft moving surface."
       ]
     }
   ],

@@ -11,7 +11,6 @@ The CV content is stored in `data.json`. `index.html` fetches the JSON file and 
 ```text
 portfolio/
 ├── index.html    # Data-driven CV page
-├── preview.html  # Standalone sample preview
 ├── style.css     # Shared visual styles for index.html
 ├── data.json     # CV content
 └── README.md

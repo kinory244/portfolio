@@ -20,6 +20,15 @@ const ICONS = {
 
 function esc(s){const e=document.createElement('span');e.textContent=s;return e.innerHTML;}
 
+function escButAllowTags(html){
+  const result=html.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  return result.replace(/&lt;i&gt;/g,'<i>').replace(/&lt;\/i&gt;/g,'</i>').replace(/&lt;em&gt;/g,'<em>').replace(/&lt;\/em&gt;/g,'</em>').replace(/&lt;b&gt;/g,'<b>').replace(/&lt;\/b&gt;/g,'</b>').replace(/&lt;strong&gt;/g,'<strong>').replace(/&lt;\/strong&gt;/g,'</strong>').replace(/&lt;br&gt;/g,'<br>');
+}
+
+function createBarGauge(level){
+  return `<div class="skill-bar"><div class="skill-bar-fill" style="width:${level}%"></div></div>`;
+}
+
 async function render(){
   const d=await(await fetch('data.json')).json();
   document.documentElement.lang=d.meta.lang;
@@ -58,8 +67,8 @@ async function render(){
 
       <div class="s-block">
         <div class="s-title">Soft Skills</div>
-        <div class="soft-grid">
-          ${d.softSkills.map(s=>`<div class="soft-item"><span class="soft-dot"></span>${esc(s)}</div>`).join('')}
+        <div class="soft-skills-list">
+          ${d.softSkills.map(s=>`<div class="soft-skill-row"><span class="soft-skill-name">${esc(s.name)}</span>${createBarGauge(s.level)}</div>`).join('')}
         </div>
       </div>
 
@@ -88,12 +97,12 @@ async function render(){
 
       <div class="sec">
         <div class="sec-title"><span class="sec-dot"></span>Education</div>
-        ${d.education.map(e=>`<div class="edu"><div class="edu-top"><span class="edu-deg">${esc(e.degree)}</span><span class="edu-when">${esc(e.period)}</span></div><div class="edu-where">${esc(e.institution)}</div>${e.note?`<div class="edu-note">${esc(e.note)}</div>`:''}</div>`).join('')}
+        ${d.education.map(e=>`<div class="edu"><div class="edu-top"><span class="edu-deg">${esc(e.degree)}</span><span class="edu-when">${esc(e.period)}</span></div><div class="edu-where">${esc(e.institution)}</div>${e.grade?`<div class="edu-grade">${esc(e.grade)}</div>`:''}${e.funding?`<div class="edu-funding">${esc(e.funding)}</div>`:''}${e.note?`<div class="edu-note">${escButAllowTags(e.note)}</div>`:''}</div>`).join('')}
       </div>
 
       <div class="sec">
         <div class="sec-title"><span class="sec-dot"></span>Research Experience</div>
-        ${d.experience.map(e=>`<div class="exp"><div class="exp-side"><span class="exp-when">${esc(e.period)}</span><span class="exp-where">${esc(e.location)}</span></div><div class="exp-body"><div class="exp-role">${esc(e.role)}</div><div class="exp-org">${esc(e.organisation)}</div><div class="exp-desc">${e.bullets?'<ul>'+e.bullets.map(b=>`<li>${esc(b)}</li>`).join('')+'</ul>':esc(e.description||'')}</div></div></div>`).join('')}
+        ${d.experience.map(e=>`<div class="exp"><div class="exp-side"><span class="exp-when">${escButAllowTags(e.period)}</span><span class="exp-where">${esc(e.location)}</span></div><div class="exp-body"><div class="exp-role">${esc(e.role)}</div><div class="exp-org">${esc(e.organisation)}</div><div class="exp-desc">${e.bullets?'<ul>'+e.bullets.map(b=>`<li>${esc(b)}</li>`).join('')+'</ul>':esc(e.description||'')}</div></div></div>`).join('')}
       </div>
 
       <div class="sec">
@@ -101,7 +110,7 @@ async function render(){
         ${d.skillAreas.map(s=>`<div class="skill-area"><div class="skill-area-name">${esc(s.area)}</div><div class="skill-area-items">${esc(s.items)}</div></div>`).join('')}
       </div>
 
-      ${d.publications&&d.publications.length?`<div class="sec"><div class="sec-title"><span class="sec-dot"></span>Publications</div>${d.publications.map(p=>`<div class="pub"><div><div class="pub-title">${p.url?`<a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a>`:esc(p.title)}</div><div class="pub-venue">${esc(p.venue)}</div></div><span class="pub-year">${esc(p.year)}</span></div>`).join('')}</div>`:''}
+      ${d.publications&&d.publications.length?`<div class="sec"><div class="sec-title"><span class="sec-dot"></span>Publications</div>${d.publications.map(p=>`<div class="pub"><div class="pub-top"><div class="pub-title">${p.url?`<a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a>`:esc(p.title)}</div><span class="pub-year">${esc(p.year)}</span></div><div class="pub-venue">${esc(p.venue)}</div></div>`).join('')}</div>`:''}
 
       ${d.certifications&&d.certifications.length?`<div class="sec"><div class="sec-title"><span class="sec-dot"></span>Certifications</div>${d.certifications.map(c=>`<div class="cert-row"><div><span class="cert-name">${esc(c.title)}</span> <span class="cert-from">— ${esc(c.issuer)}</span></div><span class="cert-year">${esc(c.year)}</span></div>`).join('')}</div>`:''}
 
