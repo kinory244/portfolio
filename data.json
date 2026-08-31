@@ -118,22 +118,22 @@
 
   "publications": [
     {
-      "title": "Design Systems for Complex SaaS Platforms: A Case Study",
-      "venue": "Springer — Modeling and Optimization in Space Engineering",
-      "year": "2023",
-      "url": "https://doi.org/10.xxxx/esempio-1"
+      "title": "Visual Monitoring Behavior in Dual- and Reduced-Crew Configurations During Abnormal Events",
+      "venue": "28th AIDAA International Congress and the 10th CEAS Aerospace Europe Conference, Turin (ITA), 1-4 December, 2025, pp. 1475-1480. ISSN 2474-395X",
+      "year": "2025",
+      "url": "https://doi.org/10.21741/9781644904251-259"
     },
     {
-      "title": "Onboarding UX Patterns: Measuring Conversion Impact",
-      "venue": "73rd International Astronautical Congress (IAC 2022), Paris",
-      "year": "2022",
-      "url": "https://doi.org/10.xxxx/esempio-2"
+      "title": "Enabling Civil Single-Pilot Operations: A State-of-the-Art Review",
+      "venue": "AEROTECNICA MISSILI E SPAZIO, vol. 104, pp. 187-212. ISSN 0365-7442",
+      "year": "2025",
+      "url": "https://doi.org/10.1007/s42496-024-00223-7"
     },
     {
-      "title": "Toward Self-Driving Interplanetary CubeSats: the ERC-Funded Project EXTREMA",
-      "venue": "72nd International Astronautical Congress (IAC 2021), Dubai",
-      "year": "2021",
-      "url": "https://doi.org/10.xxxx/esempio-3"
+      "title": "A Methodology for the Preliminary Design of a High-Efficiency Multistage Plasma Thruster",
+      "venue": "AEROTECNICA MISSILI & SPAZIO, vol. 103, pp. 321-338. ISSN 2524-6968",
+      "year": "2024",
+      "url": "https://doi.org/10.1007/s42496-024-00203-x"
     }
   ],
 
