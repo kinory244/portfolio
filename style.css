@@ -33,7 +33,7 @@ body { font-family:'Inter',sans-serif; background:#cccac4; display:flex; justify
 .sidebar-header { width:100%; padding:28px 20px 18px; background:linear-gradient(170deg,var(--sidebar-top) 0%,#091525 100%); text-align:center; position:relative; }
 .sidebar-header::after { content:''; position:absolute; bottom:0;left:0;right:0; height:28px; background:linear-gradient(to top,var(--sidebar-bg),transparent); }
 .avatar-circle { width:78px;height:78px; border-radius:50%; border:2px solid var(--accent); background:var(--sidebar-top); display:flex;align-items:center;justify-content:center; font-family:'Source Serif 4',serif; font-size:1.5rem;font-weight:700; color:var(--accent-light); margin:0 auto; position:relative;z-index:1; }
-.avatar-photo { width:155px;height:155px; border-radius:50%; border:2px solid var(--accent); object-fit:cover; object-position:center top; margin:0 auto; display:block; position:relative;z-index:1; }
+.avatar-photo { width:155px;height:155px; border-radius:16px; border:2px solid var(--accent); object-fit:cover; object-position:center top; margin:0 auto; display:block; position:relative;z-index:1; }
 
 .sidebar-body { padding:8px 20px 0; }
 
@@ -57,6 +57,7 @@ body { font-family:'Inter',sans-serif; background:#cccac4; display:flex; justify
 
 /* Soft skills — horizontal bars */
 .soft-skills-list { display:flex; flex-direction:column; gap:5px; }
+
 .soft-skill-row { display:flex; align-items:center; gap:6px; }
 .soft-skill-name { font-size:0.58rem; color:var(--sidebar-text); font-weight:500; flex-shrink:0; min-width:80px; }
 .skill-bar { flex:1; height:2px; background:rgba(255,255,255,0.05); border-radius:1px; overflow:hidden; }
@@ -72,7 +73,7 @@ body { font-family:'Inter',sans-serif; background:#cccac4; display:flex; justify
 .misc-item::before { content:'—'; position:absolute; left:0; color:var(--accent); font-size:0.5rem; }
 
 /* GDPR */
-.gdpr { font-size:0.42rem; color:var(--sidebar-muted); opacity:0.5; line-height:1.5; margin-top:14px; padding-top:8px; border-top:1px solid rgba(255,255,255,0.05); font-style:italic; }
+.gdpr { font-size:0.42rem; color:var(--sidebar-muted); opacity:0.5; line-height:1.5; margin-top:240px; padding-top:8px; border-top:1px solid rgba(255,255,255,0.05); font-style:italic; }
 
 /* ═══ MAIN ═══ */
 .main { background:var(--main-bg);padding:0; }
@@ -117,11 +118,29 @@ body { font-family:'Inter',sans-serif; background:#cccac4; display:flex; justify
 .exp-desc ul { margin:2px 0 0 12px; }
 .exp-desc ul li { margin-bottom:2px; }
 
+/* Volunteer — similar to experience with green accent */
+.vol { display:grid;grid-template-columns:88px 1fr;gap:0 14px;margin-bottom:16px; }
+.vol:last-child { margin-bottom:0; }
+.vol-side { padding-top:2px;text-align:right; }
+.vol-when { font-size:0.56rem;font-weight:700;color:var(--green);display:block;margin-bottom:1px; }
+.vol-cat { font-size:0.52rem;color:var(--text-light);display:block; }
+.vol-body { padding-left:14px; position:relative; }
+.vol-body::before { content:''; position:absolute; left:0;top:0;bottom:0; width:2px; background:var(--green); }
+.vol-body::after { content:''; position:absolute; left:-3px;top:5px; width:8px;height:8px; border-radius:50%; background:var(--green); border:2px solid var(--main-bg); }
+.vol-role { font-family:'Source Serif 4',serif;font-size:0.78rem;font-weight:600;color:var(--text-dark);margin-bottom:1px; }
+.vol-org { font-size:0.62rem;color:var(--text-mid);font-weight:500;margin-bottom:4px; }
+.vol-desc { font-size:0.62rem;color:var(--text-mid);line-height:1.55; }
+
 /* Skills — left-accent cards */
 .skill-area { padding:8px 0 8px 12px; margin-bottom:8px; border-left:2px solid var(--accent); }
 .skill-area:last-child { margin-bottom:0; }
 .skill-area-name { font-family:'Source Serif 4',serif; font-size:0.72rem; font-weight:600; color:var(--text-dark); margin-bottom:2px; }
 .skill-area-items { font-size:0.6rem; color:var(--text-mid); line-height:1.6; }
+
+/* Skills Grid — 2x2 layout */
+.skills-grid { display:grid; grid-template-columns:1fr 1fr; gap:0 24px; margin-bottom:16px; }
+.research-skills-group { margin-top:12px; }
+.research-subtitle { font-size:0.64rem; font-weight:600; color:var(--text-mid); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:10px; margin-top:8px; }
 
 /* Publications — clean */
 .pub { margin-bottom:8px; padding-left:12px; border-left:2px solid var(--divider); }

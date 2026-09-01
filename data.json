@@ -38,20 +38,22 @@
 
   "skillAreas": [
     {
-      "area": "Programming & Data",
-      "items": "Python (NumPy, pandas, scikit-learn, Hugging Face Transformers), MATLAB/Simulink, Git, LaTeX, SQL basics."
-    },
-    {
-      "area": "AI & Knowledge Engineering",
-      "items": "NLP (BERT fine-tuning, text classification), speech recognition (Whisper), ontology design (OWL/RDF, Protégé), knowledge graphs (Neo4j, Cypher)."
-    },
-    {
-      "area": "Simulation & Experimental",
-      "items": "A320 FNPT II full-flight simulator, Tobii eye-tracking systems, multi-modal data acquisition and fusion, experimental test design."
+      "area": "Programming",
+      "section": "core",
+      "items": "I am proficient in Python, MATLAB. Minor experience with web programming and database management."
     },
     {
       "area": "General",
-      "items": "Linux, Docker, MS Office, technical writing, scientific presenting."
+      "section": "core",
+      "items": "I do have experience with productivity tools, including MS Office, Google Docs. I am also familiar with LaTeX, Overleaf, and Git."
+    },
+    {
+      "area": "Knowledge Engineering & NLP Tools",
+      "items": "Hands-on experience with NLP pipelines (text classification, speech-to-text with Whisper) and ontology modelling (OWL/RDF, Protégé) applied to aerospace research. Basic familiarity with graph databases (Neo4j)."
+    },
+    {
+      "area": "Simulation & Experimental",
+      "items": "Design and execution of human-in-the-loop experiments in an A320 full-flight simulator environment. Experience with eye-tracking systems (Tobii), multi-modal data acquisition and fusion, and pilot-based test protocols."
     }
   ],
 
@@ -116,6 +118,16 @@
     }
   ],
 
+  "volunteer": [
+    {
+      "role": "Volunteer Member",
+      "organisation": "Noli Timere APS-ETS",
+      "period": "Mar 2023 — Present",
+      "category": "Arts & Culture",
+      "description": "Engagement in cultural initiatives and community events. Operating within my hometown area (northern Naples region)."
+    }
+  ],
+
   "publications": [
     {
       "title": "Visual Monitoring Behavior in Dual- and Reduced-Crew Configurations During Abnormal Events",
@@ -138,16 +150,17 @@
   ],
 
   "certifications": [
-    { "title": "Deep Learning Specialization", "issuer": "Coursera / DeepLearning.AI", "year": "2023" },
-    { "title": "ESA Academy — Concurrent Engineering Challenge", "issuer": "ESA", "year": "2022" }
+    { "title": "Introductory Certificate in Project Management", "issuer": "IPMA: International Project Management Association", "year": "2020" }
   ],
 
-  "misc": [
-    "Driving licence: B (car)",
-    "Sports: Basketball, Chess, Fantasy Soccer",
-    "Passions: Cooking, Art & Museums, Aviation Safety",
-    "Sports Blogger & Writer (basketball analytics)"
-  ],
+"misc": [
+  "Driving licence: B (car)",
+  "Avid sports follower — basketball, football, Formula One, chess",
+  "Former sports blogger covering basketball and F1",
+  "Keen interest in football analytics and data-driven sports tech",
+  "Fascinated by aviation safety culture, accident investigation, and incident reporting",
+  "Reading, cooking, exploring museums and small towns"
+],
 
   "gdpr": "I hereby authorise the use of my personal data in accordance with the GDPR 679/16 — \"European regulation on the protection of personal data\". This CV has been personally designed and coded in HTML and CSS."
 }

@@ -105,9 +105,21 @@ async function render(){
         ${d.experience.map(e=>`<div class="exp"><div class="exp-side"><span class="exp-when">${escButAllowTags(e.period)}</span><span class="exp-where">${esc(e.location)}</span></div><div class="exp-body"><div class="exp-role">${esc(e.role)}</div><div class="exp-org">${esc(e.organisation)}</div><div class="exp-desc">${e.bullets?'<ul>'+e.bullets.map(b=>`<li>${esc(b)}</li>`).join('')+'</ul>':esc(e.description||'')}</div></div></div>`).join('')}
       </div>
 
+      ${d.volunteer&&d.volunteer.length?`<div class="sec"><div class="sec-title"><span class="sec-dot"></span>Volunteer Experience</div>${d.volunteer.map(v=>`<div class="vol"><div class="vol-side"><span class="vol-when">${escButAllowTags(v.period)}</span><span class="vol-cat">${esc(v.category)}</span></div><div class="vol-body"><div class="vol-role">${esc(v.role)}</div><div class="vol-org">${esc(v.organisation)}</div><div class="vol-desc">${esc(v.description)}</div></div></div>`).join('')}</div>`:''}
+
       <div class="sec">
         <div class="sec-title"><span class="sec-dot"></span>Skills</div>
-        ${d.skillAreas.map(s=>`<div class="skill-area"><div class="skill-area-name">${esc(s.area)}</div><div class="skill-area-items">${esc(s.items)}</div></div>`).join('')}
+        <div class="skills-grid">
+          ${d.skillAreas.filter(s => !s.section || s.section === 'core').map(s=>`<div class="skill-area"><div class="skill-area-name">${esc(s.area)}</div><div class="skill-area-items">${esc(s.items)}</div></div>`).join('')}
+        </div>
+        ${d.skillAreas.some(s => s.section === 'research') ? `
+        <div class="research-skills-group">
+          <div class="research-subtitle">Research Experience</div>
+          <div class="skills-grid">
+            ${d.skillAreas.filter(s => s.section === 'research').map(s=>`<div class="skill-area"><div class="skill-area-name">${esc(s.area)}</div><div class="skill-area-items">${esc(s.items)}</div></div>`).join('')}
+          </div>
+        </div>
+        ` : ''}
       </div>
 
       ${d.publications&&d.publications.length?`<div class="sec"><div class="sec-title"><span class="sec-dot"></span>Publications</div>${d.publications.map(p=>`<div class="pub"><div class="pub-top"><div class="pub-title">${p.url?`<a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a>`:esc(p.title)}</div><span class="pub-year">${esc(p.year)}</span></div><div class="pub-venue">${esc(p.venue)}</div></div>`).join('')}</div>`:''}
