@@ -13,12 +13,10 @@
     "birthDate": "July 18, 1996",
     "birthPlace": "Naples, Italy",
     "livingIn": "Turin, Italy",
-  "bio": [
-    "Aerospace engineer finishing a PhD at Politecnico di Torino, where my work sits at the intersection of human factors, knowledge engineering, and flight simulation.",
-    "I am drawn to complexity — the steeper the learning curve, the more engaged I become. Throughout my academic path I have shifted research focus more than once, each time diving deep into unfamiliar territory, and I see that adaptability as one of my strongest assets.",
-    "I tend to be analytical and patient, both at work and outside it. I value the effort behind results as much as the results themselves, and I bring that same care to every commitment I take on.",
-    "I am now looking for roles — in R&D or research — where curiosity is a job requirement and no two problems look the same."
-  ]
+    "bio": [
+    "Aerospace engineer currently pursuing a PhD at Politecnico di Torino, with a multidisciplinary background in the discipline. My latest interest lies in understanding how pilots interact with complex cockpit systems, aiming to improve safety and human–system interaction in high-risk environments.",
+    "I enjoy entering unfamiliar technical domains, rapidly building a working understanding, and connecting ideas — particularly when the work can contribute to safer environments and a better relationship between technology and people. I tend to care about the process as much as the result, and about the people I do it with."
+    ]
   },
 
   "contacts": [
@@ -28,19 +26,20 @@
   ],
 
   "softSkills": [
-    { "name": "Research Design", "level": 95 },
+    { "name": "Research Design", "level": 90 },
     { "name": "Adaptability", "level": 90 },
-    { "name": "Analytical Thinking", "level": 92 },
-    { "name": "Self-Directed Learning", "level": 88 },
-    { "name": "Active Listening", "level": 87 },
-    { "name": "Growth Mindset", "level": 93 }
+    { "name": "Analytical Thinking", "level": 90 },
+    { "name": "Self-Directed Learning", "level": 80 },
+    { "name": "Active Listening", "level": 80 },
+    { "name": "Growth Mindset", "level": 85 },
+    { "name": "Detail Orientation", "level": 95 }
   ],
 
   "skillAreas": [
     {
       "area": "Programming",
       "section": "core",
-      "items": "I am proficient in Python, MATLAB. Minor experience with web programming and database management."
+      "items": "I am proficient in Python and MATLAB. Minor experience with web programming and database management."
     },
     {
       "area": "General",
@@ -49,10 +48,12 @@
     },
     {
       "area": "Knowledge Engineering & NLP Tools",
+      "section": "research",
       "items": "Hands-on experience with NLP pipelines (text classification, speech-to-text with Whisper) and ontology modelling (OWL/RDF, Protégé) applied to aerospace research. Basic familiarity with graph databases (Neo4j)."
     },
     {
       "area": "Simulation & Experimental",
+      "section": "research",
       "items": "Design and execution of human-in-the-loop experiments in an A320 full-flight simulator environment. Experience with eye-tracking systems (Tobii), multi-modal data acquisition and fusion, and pilot-based test protocols."
     }
   ],
